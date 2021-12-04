@@ -23,3 +23,4 @@ if __name__ == '__main__':
     df['BMI'] = df['BMI'].apply(float)
     df['Health Risk'] = df['BMI'].apply(calculate_risk)
     print(df)
+    df.to_csv('output_file.csv')
